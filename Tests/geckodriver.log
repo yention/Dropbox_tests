@@ -1,0 +1,40 @@
+1610963567539	geckodriver	INFO	Listening on 127.0.0.1:58571
+1610963570829	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\uladz\\AppData\\Local\\Temp\\rust_mozprofilekH1fK1"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1610963573503	Marionette	INFO	Listening on port 58580
+1610963573544	Marionette	WARN	TLS certificate errors will be ignored for this session
+1610963575423	Marionette	INFO	Stopped listening on port 58580
+JavaScript error: https://cfl.dropboxstatic.com/static/js/alameda_bundle/alameda_bundle_firefox_en-vflwsyqYE.js, line 2: NS_ERROR_NOT_INITIALIZED: 
+[Child 14616, Chrome_ChildThread] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:545
+
+###!!! [Child][MessageChannel] Error: (msgtype=0x3A00D4,name=PContent::Msg_ScriptErrorWithStack) Channel closing: too late to send/recv, messages will be lost
+
+1611221282249	geckodriver	INFO	Listening on 127.0.0.1:61957
+1611221285546	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\uladz\\AppData\\Local\\Temp\\rust_mozprofileuXIdKZ"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611221288411	Marionette	INFO	Listening on port 61965
+1611221288734	Marionette	WARN	TLS certificate errors will be ignored for this session
+1611221288834	Marionette	INFO	Stopped listening on port 61965
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+console.warn: services.settings: main/message-groups sync interrupted by shutdown
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 376))
+console.error: services.settings: 
+  main/fxmonitor-breaches Signature failed  Error: Shutdown, aborting read-only worker requests.
+1611222170753	geckodriver	INFO	Listening on 127.0.0.1:62158
+1611222174139	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "-headless" "-foreground" "-no-remote" "-profile" "C:\\Users\\uladz\\AppData\\Local\\Temp\\rust_mozprofile1k8QLx"
+*** You are running in headless mode.
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1611222176255	Marionette	INFO	Listening on port 62166
+1611222176317	Marionette	WARN	TLS certificate errors will be ignored for this session
+1611222176402	Marionette	INFO	Stopped listening on port 62166
+JavaScript error: resource://activity-stream/lib/ASRouter.jsm, line 987: NS_ERROR_ILLEGAL_VALUE: Component returned failure code: 0x80070057 (NS_ERROR_ILLEGAL_VALUE) [nsIObserverService.removeObserver]
+console.error: services.settings: 
+  main/message-groups Signature failed  TypeError: NetworkError when attempting to fetch resource.
+console.error: Region.jsm: "Error fetching region" (new TypeError("NetworkError when attempting to fetch resource.", ""))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 376))
+
+###!!! [Parent][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
