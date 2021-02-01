@@ -44,5 +44,18 @@ class TestMainPage():
         assert self.page.get_title() == TestData.PLANS_PAGE['title']
 
 
+    @pytest.mark.header
+    @pytest.mark.parametrize('element', Locators.DropDownMenu.WHY_DROPBOX)
+    @pytest.mark.parametrize('data', TestData.DROPDOWN_WHY_DROPBOX)
+    def test_customer_stories(self, element, data):
+        self.page = MainPage(self.driver, TestData.MAIN_PAGE['url'])
+        self.page.go_to_page()
+
+        self.page.move_to_why_dropbox()
+        self.page.click_dropdown_element(element)
+        assert self.page.get_url() == data['url']
+        assert self.page.get_title() == data['title']
+        self.driver.close()
+        time.sleep(11)
 
 
