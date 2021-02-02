@@ -3,14 +3,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-from Config.Locators import MainPageLocators
-
 
 class Page:
 
     def __init__(self, driver):
         self.driver = driver
-        self.wait = WebDriverWait(self.driver, 15)
+        self.wait = WebDriverWait(self.driver, 5)
 
     def get_title(self):
         return self.driver.title
@@ -20,12 +18,18 @@ class Page:
 
     def is_element_present(self, element):
         try:
-            element = self.wait.until(
+            self.wait.until(
                 EC.presence_of_element_located(element)
             )
         except:
-            return None
-        return element
+            return False
+        return True
+
+    def get_presents_element(self, element):
+        if self.is_element_present(element):
+            return element
+        else:
+            None
 
     def is_element_available(self, element):
         try:
@@ -38,6 +42,6 @@ class Page:
 
     def move_to_element(self, element):
         if self.is_element_available(element):
-            target = self.is_element_present(element)
+            target = self.get_presents_element(element)
             actions = ActionChains(self.driver)
             actions.move_to_element(target).perform()

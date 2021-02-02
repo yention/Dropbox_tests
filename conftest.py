@@ -29,8 +29,9 @@ def init_remote_driver_chrome():
         options = webdriver.ChromeOptions()
         options.headless = False
         options.add_argument("--start-maximized")
+        options.add_argument('--reruns 2')
         driver = webdriver.Chrome(ChromeDriverManager().install(), options=options)
-
+        driver.switch_to.window(driver.window_handles[1])
     return driver
 
 

@@ -32,10 +32,11 @@ class BasePage(Page):
     def go_to_page(self):
         self.driver.get(self.page_url)
 
-    def click_in_new_tab(self, element):
-        if self.is_element_available(element):
-            main_window = self.driver.current_window_handle
-            self.driver.find_element(*element).send_keys(Keys.CONTROL + Keys.RETURN)
-            new_window = self.driver.window_handles[1]
-            self.driver.switch_to_window(new_window)
+
+    #useless already
+    # def click_in_new_tab(self, element):
+    #     if self.is_element_available(element):
+    #         self.driver.current_window_handle
+    #         self.driver.find_element(*element).send_keys(Keys.CONTROL + Keys.RETURN)
+    #         self.driver.switch_to.window(self.driver.window_handles[1])
 

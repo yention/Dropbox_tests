@@ -26,11 +26,13 @@ class MainLogInPage():
     BUTTON_SIGN_IN_GOOGLE = (By.CSS_SELECTOR, '.login-form-container__google-div .sign-in-text')
     BUTTON_SIGN_IN_APPLE = (By.CSS_SELECTOR, '.login-form-container__apple-div .sign-in-text')
     LINK_CREATE_ACCOUNT = (By.XPATH, "//a[contains(text(),'create an account')]")
+    NOTICE_WRONG_DATES = (By.CSS_SELECTOR, '.c-card.c-card--error')
+    VERIFICATION_ALARM = (By.CSS_SELECTOR, 'div.audio-ctn')
+    VERIFICATION_BTN = (By.CSS_SELECTOR, '#home_children_button')
 
 class DropDownMenu():
 
-    WHY_DROPBOX = ['Customer stories', 'How we integrate', 'Smart workplace', 'Do more than store']
-    FRAME = "//a[contains(text(), "
+    FRAME = "//a[contains(text(), " #frame XPATH for dropdown elements
 
 
 
